@@ -11,13 +11,13 @@ package relogio;
  * @author Raul
  */
 public class Bateria {
-static private int tempo_restante =  1000000;
+static private int tempo_restante = 1000000;
 
-public int gettempo_restante(){
+static public int gettempo_restante(){
     return tempo_restante;
 }
 
 public void atualizatemporestante(){
-    tempo_restante--;
+   tempo_restante--;
 }
 }

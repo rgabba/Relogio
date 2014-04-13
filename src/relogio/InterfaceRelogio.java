@@ -42,7 +42,7 @@ public class InterfaceRelogio extends JFrame{
     JPanel mostrador = new JPanel();
     JPanel botoes =  new JPanel();
     JPanel bateria = new JPanel();
-    bateria.setLayout (new BorderLayout (5,5));
+    bateria.setLayout (new FlowLayout());
     mostrador.setLayout(new FlowLayout());
     botoes.setLayout(new BorderLayout(28,10));
     
@@ -54,7 +54,8 @@ public class InterfaceRelogio extends JFrame{
     botoes.add (botaoaltera, WEST);
     botoes.add (botaobateria, EAST);
     
-    //tempo_bat.setText();
+    String aux = ("Tempo restante de bateria: " + Bateria.gettempo_restante() + " segundos.");
+    tempo_bat.setText(aux);
     bateria.add (tempo_bat);
     tempo_bat.setEditable (false);
     /*bateria.add (tempo_bat, CENTER);
