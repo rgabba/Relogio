@@ -20,7 +20,6 @@ public class Oscilador {
         long start=System.currentTimeMillis();
         while(System.currentTimeMillis()-start<1000)
         {
-            System.out.println(segundos);
             if (System.currentTimeMillis()-start>=1000)
                 break;
         }
@@ -53,5 +52,16 @@ public class Oscilador {
          if (horas==24)
              horas=0;
     }
-
+    public void sethoras()
+    {
+        
+    }
+    public void setminutos()
+    {
+        
+    }
+    public void setsegundos()
+    {
+        
+    }
 }

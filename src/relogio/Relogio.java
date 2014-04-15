@@ -16,11 +16,19 @@ public class Relogio {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Define a interface
         InterfaceRelogio relogio = new InterfaceRelogio();
         relogio.setSize(400, 120);
         relogio.setResizable(false);
         relogio.setVisible(true);
+        
+        Oscilador oscilador = new Oscilador();
+        
+        while (Bateria.gettempo_restante()!=0)
+        {
+            if (oscilador.oscilaseg()==true)
+                relogio.atualizainterface();
+        }
     }
     
 }
