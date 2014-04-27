@@ -67,16 +67,16 @@ public class Oscilador {
          if (horas==24)
              horas=0;
     }
-    public void sethoras()
+    public static void sethoras(int h)
     {
-        
+        horas=h;
     }
-    public void setminutos()
+    public static void setminutos(int m)
     {
-        
+        minutos=m;
     }
-    public void setsegundos()
+    public static void setsegundos(int s)
     {
-        
+        segundos=s;
     }
 }
