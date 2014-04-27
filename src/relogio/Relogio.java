@@ -18,7 +18,7 @@ public class Relogio {
     public static void main(String[] args) {
         //Define a interface
         InterfaceRelogio relogio = new InterfaceRelogio();
-        relogio.setSize(400, 120);
+        relogio.setSize(400, 150);
         relogio.setResizable(false);
         relogio.setVisible(true);
         
@@ -29,6 +29,7 @@ public class Relogio {
             if (oscilador.oscilaseg()==true)
                 relogio.atualizainterface();
         }
+        
     }
     
 }

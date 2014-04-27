@@ -14,20 +14,35 @@ public class Oscilador {
     protected static int horas=0;
     protected static int minutos=0;
     protected static int segundos=0;
+    private boolean oscilar = true;
     
+    
+    public void paraoscilaseg()
+    {
+       oscilar = false; 
+    }
+    public void iniciaoscilaseg()
+    {
+        oscilar=true;
+        oscilaseg();
+    }
+
     public boolean oscilaseg()
     {
-        long start=System.currentTimeMillis();
-        while(System.currentTimeMillis()-start<1000)
-        {
-            if (System.currentTimeMillis()-start>=1000)
-                break;
+        if (oscilar==true){
+            long start=System.currentTimeMillis();
+            while(System.currentTimeMillis()-start<1000)
+            {
+                if (System.currentTimeMillis()-start>=1000)
+                    break;
+            }
+            somasegundos();
+            Bateria.atualizatemporestante();
+            return true;
         }
-        somasegundos();
-        Bateria.atualizatemporestante();
-        return true;
+        else 
+            return false;
     }
-    
     public void somasegundos()
     {
         segundos++;
