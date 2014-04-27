@@ -105,7 +105,7 @@ public class InterfaceRelogio extends JFrame{
     public void alterahora()
     {
         InterfaceAlteraHora alterahora = new InterfaceAlteraHora(this);
-        alterahora.setSize(350, 110);
+        alterahora.setSize(350, 120);
         alterahora.setLocationRelativeTo(null);
         alterahora.setResizable(false);
         alterahora.setVisible(true);      
