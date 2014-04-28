@@ -24,7 +24,7 @@ public class InterfaceRelogio extends JFrame{
     private JTextField segundos = new JTextField(2);
     
     //Botoes para extender bateria e alterar hora
-    private JButton botaobateria = new JButton ("Extender bateria");
+    private JButton botaobateria = new JButton ("Estender bateria");
     private JButton botaoaltera = new JButton  ("  Alterar hora  ");
     
     

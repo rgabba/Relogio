@@ -24,6 +24,11 @@ public class Relogio {
         
         Oscilador oscilador = new Oscilador();
         
+        if (Bateria.gettempo_restante()==0)
+        	oscilador.paraoscilaseg();
+        else
+        	oscilador.iniciaoscilaseg();
+        
         while (Bateria.gettempo_restante()!=0)
         {
             if (oscilador.oscilaseg()==true)
